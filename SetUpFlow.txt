@@ -1,0 +1,13 @@
+sudo mn --controller=remote,ip=10.0.0.20 --topo=linear,2 --switch=ovsk,protocols=OpenFlow13 --mac
+
+
+Stop SDN controller
+	sudo service sdnc stop
+Modify the /opt/sdn/virgo/bin/dmk.sh
+sudo nano /opt/sdn/virgo/bin/dmk.sh
+
+ben duoi -XX:HeapDump
+-Dsdn.signedJar=none \
+
+Start SDN controller:
+	sudo service sdnc start
