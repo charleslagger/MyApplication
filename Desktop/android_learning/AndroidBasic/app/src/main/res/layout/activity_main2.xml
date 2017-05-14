@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.khoenguyen.androidbasic.View.Main2Activity">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#47BDED"
+                android:padding="18dip"
+                android:text="Play Music"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnYes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="play" />
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Stop" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/timeDefault"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Nhap vao icon dong ho de chon ngay gio!"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeDefault"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/time_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_time" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ngay gio vua chon la :" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Time" />
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="18dip"
+                android:text="Ngay gio hien tai"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtDateChoose"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="18dip"
+                android:text="Date"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtTimeChoose"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="18dip"
+                android:text="Time"
+                android:textColor="#000000" />
+        </TableRow>
+        >
+    </TableLayout>
+
+
+    <ImageView
+        android:id="@+id/cameraImport"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/btnShowPopup"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnShowPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnShowPopup2"
+        android:layout_centerInParent="true"
+        android:text="Show AlertDialog with ListView" />
+
+    <Button
+        android:id="@+id/btnShowPopup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Show AlertDialog with RecyclerView" />
+
+
+</RelativeLayout>

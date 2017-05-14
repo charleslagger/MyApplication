@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Khoe\Desktop\android_learning\AndroidBasic\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\Khoe\Desktop\android_learning\AndroidBasic\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_eb435792744814250955aadd7dbf7246e546b944\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Khoe\Desktop\android_learning\AndroidBasic\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bff69dc9c02e25becd4093295c9ace41ecd3e52a">
+        <dex dex="C:\Users\Khoe\Desktop\android_learning\AndroidBasic\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_095722ee5e86c11d908d309ddb48121c0745ca63\classes.dex" />
+    </item>
+
+</items>
